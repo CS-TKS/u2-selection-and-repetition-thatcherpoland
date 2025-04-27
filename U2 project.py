@@ -4,13 +4,26 @@ age_list = []
 gender_list = []
 
 while True:
-    print("Enter details for the person")
-    weight = float(input("Enter weight in kilograms: "))
-    height = float(input("Enter height in centimeters: "))
-    age = int(input("Enter age in years: "))
-    gender = input("Enter gender (Male/Female): ").strip().lower()
+   weight = float(input("Enter weight (kg): "))
+   height = float(input("Enter height (cm): "))
+   age = int(input("Enter age (years): "))
+   gender = input("Enter gender (male/female): ").strip().lower()
 
-    weight_list.append(weight)
-    height_list.append(height)
-    age_list.append(age)
-    gender_list.append(gender)
+   weight_list.append(weight)
+   height_list.append(height)
+   age_list.append(age)
+   gender_list.append(gender)
+
+   if gender == "male":
+       print("Gender is male")
+   elif gender == "female":
+       print("Gender is female")
+   else:
+       print("Invalid gender input")
+
+   again = input("Add another person? (yes/no): ").strip().lower()
+   if again != "yes":
+       break
+
+
+
