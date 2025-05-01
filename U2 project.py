@@ -19,7 +19,6 @@ while True:
     age_list.append(age)
     gender_list.append(gender)
 
-    # BMR calculation
     if gender == "male":
         bmr = 10 * weight + 6.25 * height - 5 * age + 5
         print("Gender is male")
